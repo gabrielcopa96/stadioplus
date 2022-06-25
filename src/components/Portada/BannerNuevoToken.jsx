@@ -46,9 +46,6 @@ const BannerNuevoToken = ({ td }) => {
               in the world of sports and eSports thanks to <b>NFTs</b>
             </p>
           )}
-          {/* <p>
-            El token que revolucionará el modelo de <b>monetización</b> del
-          </p> */}
         </div>
         <div
           style={{
