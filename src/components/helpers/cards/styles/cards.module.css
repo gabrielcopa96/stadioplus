@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+.containerCard {
+  position: relative;
+  width: 360px;
+  height: 370px;
+  border: 1.5px solid #0039ff;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1.5rem;
+  -webkit-clip-path: polygon(
+    4% 0,
+    100% 0,
+    0% 90%,
+    40% 40%,
+    0% 100%,
+    0 100%,
+    0 45%
+  );
+  clip-path: polygon(24% 0, 100% 0, 100% 75%, 75% 100%, 0% 100%, 0 100%, 0 25%);
+}
+
+.containerCard:before {
+  content: "";
+  position: absolute;
+  width: 131px;
+  left: -23px;
+  transform: rotate(-47deg);
+  top: 45px;
+  height: 1px;
+  background-color: #0039ff;
+}
+
+.containerCard:after {
+  content: "";
+  position: absolute;
+  width: 131px;
+  right: -22px;
+  transform: rotate(315deg);
+  bottom: 47px;
+  height: 1px;
+  background-color: #0039ff;
+}
+
+.containerCardColor h2,
+.containerCardColor h3,
+.containerCardColor p {
+  font-family: "Montserrat";
+  color: #011c44;
+}
+
+.containerCardColorDark h2,
+.containerCardColorDark h3,
+.containerCardColorDark p {
+  font-family: "Montserrat";
+  color: #fff;
+}
+
+
+.containerCard h2 {
+  padding-top: 15.5rem;
+  font-size: 1rem;
+  letter-spacing: 2.5px;
+  padding-left: 1.1rem;
+  padding-right: 0.9rem;
+  margin-bottom: -0.6rem;
+}
+
+.containerCard h3 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  padding-left: 1.1rem;
+  margin-bottom: -0.7rem;
+}
+
+.containerCard p {
+  font-weight: 500;
+  padding-left: 1.1rem;
+}
+
+.imgBox {
+  width: 320px;
+  top: 8px;
+  left: 20px;
+  position: absolute;
+  z-index: 1;
+  height: 250px;
+}
+
+.btnComprar {
+  color: #fff;
+  width: 35%;
+  background: #d6302a;
+  position: absolute;
+  border: 1px solid #d6302a;
+  bottom: -20px;
+  right: -10px;
+  text-align: center;
+  padding: 0.7rem 1.8rem;
+  font-weight: 700;
+  -webkit-clip-path: polygon(
+    4% 0,
+    100% 0,
+    0% 90%,
+    40% 40%,
+    0% 100%,
+    0 100%,
+    0 45%
+  );
+  clip-path: polygon(10% 0, 100% 0, 100% 70%, 92% 100%, 0% 100%, 0 100%, 0 45%);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.btnComprar:hover {
+  background-color: #fff;
+  color: #d6302a;
+  font-weight: 700;
+  border: 1px solid #d6302a;
+}
+
+.btnExplorar {
+  color: #fff;
+  width: 35%;
+  background: #0039ff;
+  position: absolute;
+  border: 1px solid #0039ff;
+  bottom: -20px;
+  right: -10px;
+  text-align: center;
+  padding: 0.7rem 1.8rem;
+  font-weight: 700;
+  -webkit-clip-path: polygon(
+    4% 0,
+    100% 0,
+    0% 90%,
+    40% 40%,
+    0% 100%,
+    0 100%,
+    0 45%
+  );
+  clip-path: polygon(10% 0, 100% 0, 100% 70%, 92% 100%, 0% 100%, 0 100%, 0 45%);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.btnExplorar:hover {
+  background-color: #fff;
+  color: #0039ff;
+  font-weight: 700;
+  border: 1px solid #0039ff;
+}
+
+/* AQUI VAN LOS ESTILOS DE LA CARD DE LOS BLOGS */
+
+.containerCardBlog {
+  position: relative;
+  width: 400px;
+  height: 390px;
+  border: 1.5px solid #0039ff;
+  background-color: #0039ff;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1.5rem;
+  -webkit-clip-path: polygon(
+    4% 0,
+    100% 0,
+    0% 90%,
+    40% 40%,
+    0% 100%,
+    0 100%,
+    0 45%
+  );
+  clip-path: polygon(24% 0, 100% 0, 100% 75%, 75% 100%, 0% 100%, 0 100%, 0 25%);
+}
+
+.imgBox2 {
+  width: 360px;
+  top: 15px;
+  left: 20px;
+  position: absolute;
+  z-index: 1;
+  height: 250px;
+}
+
+.containerCardBlog h2 {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.btnArrow {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  z-index: 1;
+  cursor: pointer;
+  background-color: #011c44;
+  color: #fff;
+  padding: 0.7rem 0.8rem;
+  border-radius: 0.5rem;
+  border: 3px solid #0039ff;
+}
+
+

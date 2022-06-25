@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+.header {
+  position: relative;
+  width: 100%;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 2.2rem;
+  justify-content: space-around;
+}
+
+.navbar img {
+  width: 210px;
+  height: 60px;
+  background-clip: content-box;
+  opacity: 0.9;
+}
+
+.itemsNavbar {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  font-family: "Montserrat";
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.item {
+    position: relative;
+    cursor: pointer;
+}
+
+.item:before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 20%;
+    opacity: 0;
+    height: 3px;
+    background-color: #D6302A;
+    transition: .6s;
+}
+
+.item:hover:before {
+    opacity: 1;
+    width: 100%;
+}
+
+.search {
+  position: relative;
+}
+
+.inputSearch {
+  position: relative;
+  font-family: "Montserrat";
+  padding: 0 1rem;
+  width: 350px;
+  font-weight: 600;
+  color: #a8a8a8;
+  background: transparent;
+  height: 32px;
+  border: 2px solid #a8a8a8;
+  -webkit-clip-path: polygon(
+    4% 0,
+    100% 0,
+    0% 90%,
+    40% 40%,
+    0% 100%,
+    0 100%,
+    0 45%
+  );
+  clip-path: polygon(4% 0, 100% 0, 100% 65%, 96% 100%, 0% 100%, 0 100%, 0 45%);
+  box-shadow: 0px 0px 10px 20px #0202;
+}
+
+.inputSearch:before {
+  background: inherit;
+  z-index: 1;
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 5vmin;
+  height: 5vmin;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.iconSearch {
+  position: absolute;
+  right: 0.65rem;
+  top: 0.55rem;
+}
+
+.btnRegister {
+  background: #d6302a;
+  color: #fff;
+  padding: 0.5rem 1.8rem;
+  border: 1px solid #d6302a;
+  -webkit-clip-path: polygon(
+    4% 0,
+    100% 0,
+    0% 90%,
+    40% 40%,
+    0% 100%,
+    0 100%,
+    0 45%
+  );
+  clip-path: polygon(10% 0, 100% 0, 100% 70%, 92% 100%, 0% 100%, 0 100%, 0 45%);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.btnRegister:hover {
+  background-color: #fff;
+  color: #d6302a;
+  font-weight: 600;
+  border: 1px solid #d6302a;
+}
+
+.containerDropdown{ 
+    display: flex;
+    margin-top: 1.5rem;
+    height: 2.7rem;
+    justify-content: space-between;
+    align-items: center;
+    background: #0039FF;
+}
+
+.itemsDropDown {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-weight: 700;
+    margin-left: 8rem;
+    color: #fff;
+}
+
+/* AQUI VAN LOS ESTILOS DEL SWTICH/TOGGLE  */
+
+.themeChange {
+  cursor: pointer;
+  border: 1px solid #0039FF;
+  border-radius: 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .9rem;
+  padding: .6rem 1rem;
+}
+
+.themeChange:hover {
+  color: red;
+}
+
+.circulo {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #0039FF;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #0039FF;
+  box-shadow: 0px 0px 12px rgba(45, 106, 244, 0.7);
+  transition: all .7s;
+}
+
+.circulo2 {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #0039FF;
+  box-shadow: 0px 0px 12px rgba(45, 106, 244, 0.7);
+  position: absolute;
+  right: 1rem;
+  border-radius: 50%;
+  background-color: #0039FF;
+  transition: all .7s;
+}
+
+.boxChangeIdioma {
+  width: 55px;
+  position: absolute;
+  height: 50px;
+  justify-content: center;
+  top: 10rem;
+  right: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0037ffcb;
+}
+
+.active {
+  background-color: #0037ffe1;
+  width: 100%;
+  /* padding-bottom: .4rem; */
+  text-align: center;
+  cursor: pointer;
+}
+
+.inactive {
+  cursor: pointer;
+}
+
+.inactive:hover {
+  background-color: #0037ffe1;
+  width: 100%;
+  text-align: center;
+}

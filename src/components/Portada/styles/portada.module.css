@@ -1,0 +1,622 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Days+One&display=swap");
+
+.containerPortada {
+  width: 90%;
+  margin: 3rem auto 2.5rem auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.textPortada {
+  margin: 7rem 6rem;
+}
+
+.textPortada h1 {
+  font-family: "Days One", sans-serif;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.textPortada p {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.8px;
+}
+
+.containerBtnsPortada {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  justify-content: flex-start;
+}
+
+.btnCreaNft {
+  background: #0039ff;
+  color: #fff;
+  padding: 0.5rem 1.8rem;
+  border: 1px solid #0039ff;
+  font-weight: 700;
+  -webkit-clip-path: polygon(
+    4% 0,
+    100% 0,
+    0% 90%,
+    40% 40%,
+    0% 100%,
+    0 100%,
+    0 45%
+  );
+  clip-path: polygon(10% 0, 100% 0, 100% 70%, 92% 100%, 0% 100%, 0 100%, 0 45%);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.btnCreaNft:hover {
+  background-color: #fff;
+  color: #0039ff;
+  font-weight: 700;
+  border: 1px solid #0039ff;
+}
+
+.btnExplorar {
+  background: #d6302a;
+  color: #fff;
+  padding: 0.5rem 1.8rem;
+  border: 1px solid #d6302a;
+  font-weight: 700;
+  -webkit-clip-path: polygon(
+    4% 0,
+    100% 0,
+    0% 90%,
+    40% 40%,
+    0% 100%,
+    0 100%,
+    0 45%
+  );
+  clip-path: polygon(10% 0, 100% 0, 100% 70%, 92% 100%, 0% 100%, 0 100%, 0 45%);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.btnExplorar:hover {
+  background-color: #fff;
+  color: #d6302a;
+  font-weight: 700;
+  border: 1px solid #d6302a;
+}
+
+.imagePortada {
+  margin-top: 3rem;
+}
+
+.containerImgPortada {
+  margin: 1.5rem auto;
+  position: relative;
+  width: 410px;
+  height: 430px;
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  align-items: center;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background: #a81611; */
+  -webkit-clip-path: polygon(
+    4% 0,
+    100% 0,
+    0% 90%,
+    40% 40%,
+    0% 100%,
+    0 100%,
+    0 45%
+  );
+  clip-path: polygon(35% 0, 100% 0, 100% 65%, 65% 100%, 0% 100%, 0 100%, 0 35%);
+  overflow-y: hidden;
+  overflow-x: hidden;
+  z-index: 0;
+}
+
+.imgBasket {
+  position: absolute;
+  top: 200px;
+  right: 250px;
+  width: 680px;
+  height: 515px;
+  filter: grayscale(100%);
+  z-index: 1;
+}
+
+@media (max-width: 1600px) {
+  .imgBasket {
+    position: absolute;
+    top: 200px;
+    right: 160px;
+    width: 680px;
+    height: 515px;
+    filter: grayscale(100%);
+    z-index: 1;
+  }
+}
+
+/* AQUI VAN LOS ESTILOS DE LA PORTADA DEL MERCADO SECUNDARIO */
+
+.containerPortadaMarketSec {
+  background-color: #0039ff;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 440px;
+  align-items: center;
+  justify-content: center;
+}
+
+.portadaMarketSec {
+  width: 60%;
+  height: 350px;
+  background-position-y: 21%;
+  background-position-x: 42%;
+  background-repeat: no-repeat;
+  position: absolute;
+  clip-path: polygon(0 0, 100% 0, 100% 66%, 86% 100%, 0 100%);
+  right: 6rem;
+}
+
+.containerTextPort {
+  height: 350px;
+  width: 87.6%;
+  position: relative;
+  background-color: #1a1736;
+  border-radius: 1rem 0 0 1rem;
+  clip-path: polygon(0 0, 100% 0, 100% 66%, 86% 100%, 0 100%);
+}
+
+.text {
+  position: absolute;
+  z-index: 1;
+  left: 16rem;
+  top: 5rem;
+}
+
+.text h1:nth-child(1) {
+  color: #fff;
+  margin-bottom: -1.3rem;
+  font-family: "Days One", sans-serif;
+}
+
+.text h1:nth-child(2) {
+  color: #fff;
+  margin-bottom: -0.5rem;
+  font-family: "Days One", sans-serif;
+}
+
+.text p {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: -1.4rem;
+}
+
+.btnMercadoSec {
+  background: #d6302a;
+  color: #fff;
+  padding: 0.8rem 1rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  bottom: -5rem;
+  width: 40%;
+  border: 1px solid #d6302a;
+  font-weight: 800;
+  clip-path: polygon(6% 0, 100% 0, 100% 50%, 93% 100%, 0 100%, 0 53%);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.btnMercadoSec:hover {
+  background-color: #fff;
+  color: #d6302a;
+  font-weight: 800;
+  border: 1px solid #d6302a;
+}
+
+.imgCard {
+  position: absolute;
+  right: 12rem;
+  bottom: 0;
+  width: 700px;
+  height: 450px;
+  transform: rotate(2deg);
+}
+
+@media (max-width: 1600px) {
+  .imgCard {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 700px;
+    height: 450px;
+    transform: rotate(2deg);
+  }
+}
+
+.containerMainNosotros {
+  width: 85%;
+  margin: 3rem auto 3rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.containerPortadaSobreNosotros {
+  margin: 1.5rem auto;
+  position: relative;
+  width: 400px;
+  height: 490px;
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  align-items: center;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-clip-path: polygon(
+    4% 0,
+    100% 0,
+    0% 90%,
+    40% 40%,
+    0% 100%,
+    0 100%,
+    0 45%
+  );
+  clip-path: polygon(35% 0, 100% 0, 100% 65%, 65% 100%, 0% 100%, 0 100%, 0 35%);
+  overflow-y: hidden;
+  overflow-x: hidden;
+  z-index: 0;
+}
+
+.imgFut {
+  position: absolute;
+  filter: grayscale(100%);
+  width: 480px;
+  height: 580px;
+  top: -20px;
+}
+
+.containerTextNosotros h1,
+h2 {
+  font-family: "Days One", sans-serif;
+}
+
+.textNosotros p {
+  margin-bottom: -0.8rem;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  color: #011c44;
+}
+
+.textNosotros2 p {
+  margin-bottom: -0.8rem;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+/* AQUI VAN LOS ESTILOS DEL BANNER NUEVO NFT */
+
+.containerBannerNft {
+  background-color: #d6302a;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 520px;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+
+.mainBannerNft {
+  width: 130%;
+  height: 430px;
+  background-position-y: 31%;
+  background-position-x: 90%;
+  border-radius: 2rem;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  position: absolute;
+  clip-path: polygon(0 0, 100% 0, 100% 66%, 86% 100%, 0 100%);
+  right: 1rem;
+}
+
+.textBanner {
+  position: absolute;
+  left: 12rem;
+}
+
+.textBanner h1 {
+  font-family: "Days One", sans-serif;
+  color: #fff;
+  margin-bottom: -1rem;
+}
+
+.parrafoBannerNft {
+  padding-top: 1.3rem;
+}
+
+.parrafoBannerNft p {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1.1px;
+  margin-bottom: -1rem;
+}
+
+.inputBannerNft {
+  border: 2px solid #fff;
+  padding: 0.8rem 0.4rem;
+  color: rgb(216, 216, 216);
+  font-size: 1.1rem;
+  border-radius: 1rem;
+  background-color: transparent;
+  width: 300px;
+}
+
+.btnJoin {
+  border: 2px solid #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.7s;
+}
+
+.btnJoin:hover {
+  background-color: #fff;
+  color: #020202;
+  font-weight: 700;
+}
+
+.seccionCheck {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* AQUI COMIENZA LOS ESTILOS DEL BANNER CARDS */
+
+.seccionImg1 {
+  position: absolute;
+  right: 30.5rem;
+  top: 4rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.fondoimg1 {
+  width: 280px;
+  height: 360px;
+  background-position: center;
+  background-size: cover;
+  filter: blur(5px);
+}
+
+.detailsCard1 {
+  background: rgba(255, 76, 171, 0.61);
+  padding: .1rem .4rem;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  background: linear-gradient(
+    5deg,
+    rgba(255, 76, 171, 0.473) 0%,
+    rgba(85, 129, 250, 0.425) 100%
+  );
+}
+
+.imagen1 {
+  width: 810px;
+  right: 15.5rem;
+  height: 520px;
+  position: absolute;
+  z-index: 1;
+}
+
+/* AQUI VAN LA DE LA SEGUNDA CARD */
+
+.seccionImg2 {
+  position: absolute;
+  left: 56.5rem;
+  top: 11rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.fondoimg2 {
+  width: 135px;
+  height: 180px;
+  background-position: center;
+  background-size: cover;
+  filter: blur(5px);
+}
+
+.detailsCard2 {
+  background: rgba(255, 76, 171, 0.61);
+  padding: .1rem .4rem;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  background: linear-gradient(
+    5deg,
+    rgba(255, 76, 171, 0.473) 0%,
+    rgba(85, 129, 250, 0.425) 100%
+  );
+}
+
+.imagen2 {
+  width: 280px;
+  left: 52rem;
+  height: 180px;
+  position: absolute;
+  z-index: 1;
+}
+
+/* AQUI VAN LA DE LA TERCERASSS */
+
+.seccionImg3 {
+  position: absolute;
+  right: 16rem;
+  top: 11.5rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.fondoimg3 {
+  width: 135px;
+  height: 180px;
+  background-position: center;
+  background-size: cover;
+  filter: blur(5px);
+}
+
+.detailsCard3 {
+  background: rgba(255, 76, 171, 0.61);
+  padding: .1rem .4rem;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  background: linear-gradient(
+    5deg,
+    rgba(255, 76, 171, 0.473) 0%,
+    rgba(85, 129, 250, 0.425) 100%
+  );
+}
+
+.imagen3 {
+  width: 280px;
+  right: 11.3rem;
+  top: 11rem;
+  height: 180px;
+  position: absolute;
+  z-index: 1;
+} 
+
+@media (max-width: 1600px) {
+  .seccionImg1 {
+    position: absolute;
+    right: 13.2rem;
+    top: 4rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+  }
+  
+  .fondoimg1 {
+    width: 280px;
+    height: 360px;
+    background-position: center;
+    background-size: cover;
+    filter: blur(5px);
+  }
+  
+  .detailsCard1 {
+    background: rgba(255, 76, 171, 0.61);
+    padding: .1rem .4rem;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    background: linear-gradient(
+      5deg,
+      rgba(255, 76, 171, 0.473) 0%,
+      rgba(85, 129, 250, 0.425) 100%
+    );
+  }
+  
+  .imagen1 {
+    width: 800px;
+    right: -2rem;
+    height: 520px;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* AQUI VAN LA DE LA SEGUNDA CARD */
+  
+  .seccionImg2 {
+    position: absolute;
+    right: 35rem;
+    top: 11rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+  }
+  
+  .fondoimg2 {
+    width: 135px;
+    height: 180px;
+    background-position: center;
+    background-size: cover;
+    filter: blur(5px);
+  }
+  
+  .detailsCard2 {
+    background: rgba(255, 76, 171, 0.61);
+    padding: .1rem .4rem;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    background: linear-gradient(
+      5deg,
+      rgba(255, 76, 171, 0.473) 0%,
+      rgba(85, 129, 250, 0.425) 100%
+    );
+  }
+  
+  .imagen2 {
+    width: 280px;
+    left: 51rem;
+    height: 180px;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* AQUI VAN LA DE LA TERCERASSS */
+  
+  .seccionImg3 {
+    position: absolute;
+    right: 2rem;
+    top: 11.5rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+  }
+  
+  .fondoimg3 {
+    width: 135px;
+    height: 180px;
+    background-position: center;
+    background-size: cover;
+    filter: blur(5px);
+  }
+  
+  .detailsCard3 {
+    background: rgba(255, 76, 171, 0.61);
+    padding: .1rem .4rem;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    background: linear-gradient(
+      5deg,
+      rgba(255, 76, 171, 0.473) 0%,
+      rgba(85, 129, 250, 0.425) 100%
+    );
+  }
+  
+  .imagen3 {
+    width: 280px;
+    right: -2rem;
+    top: 11rem;
+    height: 180px;
+    position: absolute;
+    z-index: 1;
+  } 
+}
