@@ -67,7 +67,7 @@ const Header = (props) => {
   const arrowReverse = {
     height: "20px",
     width: "20px",
-    transform: "rotate(360deg)"
+    transform: "rotate(180deg)"
   }
 
   return (
